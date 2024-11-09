@@ -1,0 +1,15 @@
+#nodejs basics
+#introduction to nodejs
+#installing nodejs and npm
+#node & npm
+#working with node and npm
+#npm init
+#node basic usage 
+#working with moduls
+#file system opetaions
+#understanding HTTP moduls
+    
+
+
+#what is nodejs
+=it is javascript runtime environment

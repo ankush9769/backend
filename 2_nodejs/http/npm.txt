@@ -1,0 +1,10 @@
+so in the package.json the there is one thing whos name id script:{    }
+in this script you can set you customiz name or object in which you are defining what  you want to do in the script 
+let suppose
+
+"start":"node index.js"        this script rum you index.js file when you write "npm start" in terminal
+
+
+
+
+
