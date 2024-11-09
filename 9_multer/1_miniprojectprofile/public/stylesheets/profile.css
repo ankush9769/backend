@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+body {
+    background-color: rgb(17, 15, 15);
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+    margin: 3vh 3.5vh;
+}
+.username{
+    line-height: 81px;
+    font-size: 20px;
+    margin-left: 5px;
+
+}
+
+input {
+    outline: none;
+    padding-left: 5px;
+    margin: 3vh 3.5vh;
+    width: 15vw;
+    height: 6vh;
+    background-color: rgb(215, 204, 204);
+    border-radius: 5px;
+}
+
+.email {
+    background-color: rgb(182, 175, 175);
+}
+
+.submit {
+    background-color: rgb(66, 66, 228);
+    color: white;
+    padding-right: 5px;
+}
+
+h2,
+h4 {
+    color: white;
+    margin-left: 3.5vh;
+}
+
+#textbox {
+    margin: 3vh 3.5vh;
+    outline: none;
+    resize: none;
+}
+input {
+    margin-left: 3.5vh;
+    display: block;
+    background-color: rgb(35, 35, 199);
+    color: white;
+    width: 210px;
+}
+.h2{
+    margin-top: 6vh;
+    margin-left: 3.5vh;
+    font-size: 20px;
+}
+.allpost{
+    color: rgb(16, 13, 13);
+    margin-top: 1vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 90%;
+    margin-left: 3.5vh;
+}
+.post{
+    border-radius: 5px;
+    width: 40%;
+    padding: 2px 4px 2px 4px;
+    background-color: rgb(190, 215, 239);
+}
+.edit{
+    margin-left: 4vh;
+}
+.first{
+    margin-left: 3.5vh;
+    display: flex;
+}
+.profile{
+    background-size:contain;
+    width: 50px;
+    height: 60px;
+    margin-top: 2vh ;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+.logout{
+    text-decoration: none;
+    margin-left: 76vw;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 8px 30px;
+    background-color: red;
+    color:rgb(255, 255, 255);
+}
+.topbox{
+    margin-top: 5vh;
+}

@@ -1,0 +1,6 @@
+so basically in this project we are working with the mongodb not to the any cookie ,bcrypt and jwt .
+we creatting to two model(tabel) in the same database first is user and second is post
+were user model contains all user info like username,email ,age,posts
+were post model containe post inof like postdata,userid,date 
+post model should know about the user _id and  user model should know about the post _id
+so that they can easily take the refference from each other

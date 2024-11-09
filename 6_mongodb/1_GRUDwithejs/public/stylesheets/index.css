@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 17px;
+    font-weight: 500;
+}
+body{
+    background-color: rgb(48, 46, 46);
+}
+h1{
+    color: white;
+    font-size: 30px;
+    margin-left: 10vh;
+}
+a{
+    color: blue;
+    margin-left:10vh;
+}
+input{
+    outline: none;
+    padding-left: 5px;
+    margin: 3vh 10vh;
+    width:15vw;
+    height: 6vh;
+    background-color: rgb(182, 175, 175);
+    border-radius: 5px;
+}
+.submit{
+    background-color: rgb(66, 66, 228);
+    color: white;
+    padding-right: 5px;
+}

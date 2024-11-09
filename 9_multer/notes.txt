@@ -1,0 +1,4 @@
+#) it is basicaly used to upload any file (txt,image,vedio,pdf any othe docs)
+#) in multer you can store the file in two place 
+   1) disk storage ( within you project folder)
+   2) memory storage ( within the some databases)

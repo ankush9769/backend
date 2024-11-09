@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheet/editfile.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form">
+        <form action="/edit" method="post">
+            <a href="/" class="content">go back to home page</a><br>
+            <input type="text" class="element" id="input" name="previus" value="<%= filename %>"><br>
+            <input type="text" class="element"  placeholder="new filename" name="new"><br>
+            <input type="submit" value="edit name" class="button">
+        </form>
+    </div>
+
+
+</body>
+
+</html>

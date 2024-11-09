@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Document</title>
+    <style>
+        a{
+            margin: 3.5vh;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            background-color: greenyellow;
+            padding: 8px 97px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>create user</h1>
+        <form action="/registration" method="post">
+            <input class="input name" type="text" placeholder="username" name="username">
+            <input class="input name" type="text" placeholder="name" name="name">
+            <input class="input email" type="email" placeholder="email" name="email">
+            <input class="input password" type="password" placeholder="password" name="password">
+            <input class="input age" type="number" placeholder="age" name="age">
+            <input class="submit" type="submit" value="create">
+        </form>
+    <a href="/login">login</a>    
+</body>
+
+</html>

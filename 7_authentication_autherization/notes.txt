@@ -1,0 +1,69 @@
+# authentication 
+=> when you are trying to login somewhere for any  reason, you need to authenticate yourself. This is the process of verifying your identity.  it will whather you exist in the there list or not . if you exist then you are authenticated.  if you dont exist then you are not authenticated
+
+#  authorization
+=> if you are authenticated and  you are allowed to do something(task) then you are authorized.  if you are authenticated but you are not  allowed to do something(task) then you are not authorized.
+
+
+
+# session and cookie
+so when you authenticate yourself at any website then after next moment server forgot who  you are.  so you need to authenticate yourself again. so here the concept session and cookie  comes into picture.that temperary store the your data or authentication data
+
+how session and cookie works
+=> when you request some things then server aks "who are you" then you authenticate yourself now server response you request and it also send some random string with response so that next time when ever you will request again then this string automatically go send with these  request.  so server can identify you and can provide you the data which you requested.
+
+
+
+
+
+# what we will learn here
+1) how to set and read the cookie
+2) how to use bcrypt for password encryption and decryption
+3) what JWT(jsonwebtoken) and how to store the data into JWT and how to retrive the data from JWT
+
+
+steps
+1) npm init -y
+2) install the required packages like  bcrypt and jsonwebtoken
+3) for reading the session on the web we need the package cookie-parser
+4) npm i cookie-parser
+
+
+# bcrypt 
+=>it is way by which  we can encrypt and decrypt the password.
+flow=======
+ lets out password is password and it encryption form is "qbttxpse" that follow algorithm like write one  character then shift one position to right and then write the next character and so on 
+ salt=random string like ksd&asd%$o23hfa@djf76lhaf64ib5$%IKBGH&%
+ hash= encrypted password like qbttxpse
+
+
+# jwt         = for info about jwt goto https://jwt.io/
+
+ => by using the jwt we can  store the data in the token and we can retrive the data from the token. 
+ that token is =>
+  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+
+first line of token contains = {
+  "alg": "HS256",
+  "typ": "JWT"
+}
+
+second line of token constains ={
+  "sub": "1234567890",
+  "name": "John Doe",
+  "iat": 1516239022
+}
+
+third line of token contains =
+HMACSHA256(
+  base64UrlEncode(header) + "." +
+  base64UrlEncode(payload),
+  your-256-bit-secret
+) secret base64 encoded
+
+
+
+
+
+
+

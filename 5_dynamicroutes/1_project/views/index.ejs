@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="form">
+            <form action="/create" method="post">
+                <input type="text" class="element" id="input" placeholder="enter your filename" name="title">
+                <textarea name="descripttion" id="t1" class="element"placeholder="enter the descripttion"></textarea> <!-- for accessing the value of the element you have to use name attribute in the tag -->
+                <input type="submit" value="create task" class="button">
+            </form>
+        </div>
+        <div class="task">
+            <!-- so if you want to petform the some logical tisk like using conditional statement etc then you have to write those things in the <%  %> tag
+            and you  can use the <%= %> tag to print the value of the variable -->
+            <% if(filearray.length > 0){ %>
+                <% filearray.forEach(function(val){ %>
+                    <div class="task1">
+                        <h1><%=val%></h1>
+                        <div class="link">
+                            <a href="/file/<%= val %>">read more</a>
+                            <a href="/delete/<%= val %>" id="delete">delete</a>
+                            <a href="/edit/<%= val %>" id="edit">edit filename</a>
+                        </div>
+                        
+                    </div>
+                <% }) %>
+            <%  } else { %>
+                <div class="notask"><h1>No task yett</h1></div>
+            <%  } %>
+        </div>
+        
+    </div>
+    
+    
+    
+</body>
+</html>

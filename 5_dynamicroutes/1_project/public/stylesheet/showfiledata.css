@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.main{
+    margin-top: 47px;
+    width: 90%;
+    color: white;
+    background-color: black;
+}
+.content{
+    padding-top: 10px;
+}
+
+.main a{
+    color: rgb(49, 49, 214);
+}

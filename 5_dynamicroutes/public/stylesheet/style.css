@@ -1,0 +1,12 @@
+p{
+    font-size: 40px;
+    font-weight: 600;
+    color:aqua;
+    text-shadow: 3px 7px  5px rgba(0, 0, 0, 0.5);
+    transition: all;
+    transition-duration: 0.6s;
+}
+p:hover{
+    color: rgb(255, 0, 242);
+    
+}

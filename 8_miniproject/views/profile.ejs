@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+    <title>Document</title>
+    <style>
+        h3{
+            color: rgb(38, 38, 197);
+        }
+        small{
+            display: block;
+            margin-top: 12px;
+        }
+        .delete{
+            margin-left: 4vh;
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>profile page</h1>
+    <h2>hello <%= user.name %>
+    </h2>
+    <h4>you can create post</h4>
+    <form action="/post" method="post">
+        <textarea placeholder="whats in your mind" name="content" id="textbox"></textarea>
+        <input type="submit" value="create post" name="submit">
+    </form>
+    <h2 class="h2">your post</h2>
+    <div class="allpost">
+        <% user.posts.reverse().forEach(function(details){ %>
+            <div class="post">
+                <h3>@<%= user.name %></h3>
+                <p><%= details.content %></p>
+                <small><%= details.like.length %> like</small>
+                <div class="likeandedit">
+                    <a href="/like/<%= details._id %>">
+                        <% if(details.like.indexOf(user._id)=== -1){ %>
+                            like
+                        <% }else{ %>
+                            Unlike
+                        <% } %>
+                    </a>
+                    <a href="/edit/<%= details._id%>" class="edit">edit</a>
+                    <a href="/delete/<%= details._id %>" class="delete">delete</a>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+we will learn 
+
+# setting up parsers for from
+
+# setting up ejs for ejs pages
+
+# setting up public static files    = it is created for image , css and js  files
+
+
+# dynamic routing  
+    
+# how to get data from frontend at backend route
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+steps for doing the project
+1) first initilize the npm  project
+   npm init -y
+2) install express and ejs
+   npm  install express
+   npm install ejs
+3) set up ejs as view  engine
+4) create views folder then create index.ejs file and write the code in it
+5) use this command to allow you  to use images , cssfile, javascript file  in your project 
+   app.use(express.static(path.join(__dirname,'public')))
+6) create public folder within it create images ,stylesheet and javascript    
+7) link that static public file  in your ejs file
+
+
+8) creating dynamic routes
+   =>some time in routes there is some parts is always change and some part is constant so this is known as dynamic routes
+   eg..   /ankush/pal
+          /ankush/boss
+          /ankush/friend
+          /andush/object
+  
+   steps to create dynamic routes
+   1) go to brower and serach  for the route you want to create
+   2) now  go to your server.js file and create a route for that
+   3) and feager out the that things which is keep changing  in the route
+   4) then put : this sign before that now it is act like a variable
+   5) now you can use that variable in your route function
+   6) you can use req.params to display the entire object of the  variable
+
+
+
+
+
+
+
+

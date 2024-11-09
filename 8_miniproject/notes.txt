@@ -1,0 +1,19 @@
+user post likh payega
+user cration
+logout
+login
+post creation
+post like
+post delete (only who  created post)
+
+
+
+
+
+
+
+
+steps
+1)install all nessery package
+ =  npm i express ejs mongoose jsonwebtoken bcrypt cookie-parser
+ 

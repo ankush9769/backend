@@ -1,0 +1,42 @@
+notes:in backend the are 2 server first is applicatoin server and second is database server 
+
+
+
+#database
+types of database = SQL and NoSQL(not only SQL)
+
+
+in NoSQL the data is  not in table format , it is in  document format(object)
+eg..
+{
+    name:ankush,
+    age:19,
+    rollno:929
+}
+
+now mongodb is database that follows the NoSQL  concept
+
+
+
+
+
+# terminologies => collections,documents, schemas, keys, models
+
+code                        database
+---------------------------------------------
+mongoose.connect    ->    database create
+model create        ->    collections
+CREATE (schema)     ->    document
+
+
+
+
+
+
+lets start
+# mongodb installation
+# mongodb connection
+# schema
+# model
+# CRUDkk
+

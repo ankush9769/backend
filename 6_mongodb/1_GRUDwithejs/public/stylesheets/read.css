@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+body{
+    background-color: rgb(24, 21, 21);
+}
+.first{
+    color: blue;
+    margin-left: 6vh
+}
+h1{
+    margin: 10px 40px;
+}
+.main{
+    margin: 10px 40px;
+    width: 94%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.box{
+    border-radius: 10px;
+    width: 170px;
+    background-color: rgb(81, 76, 76);
+}
+.img{
+    border-radius:10px;
+    background-color: red;
+    width: 170px;
+    height: 200px;
+}
+.name{
+    padding-left: 4px;
+}
+.edit{
+    display: inline;
+}
+.delete{
+    color: red;
+    padding-left: 30px;
+}
+.editmain{
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 2px;
+}
