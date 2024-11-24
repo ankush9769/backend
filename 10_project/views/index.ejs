@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <% if(error.length>0){ %>
+        <div class="errorbox">
+            <span class="">
+                <%= error %>!
+            </span>
+        </div>
+        <% } %>
+    <div class="main">
+        <h2>scatch</h2>
+        <div class="box1">
+            <div class="box2">
+                <div class="box3">
+                    <form action="/users/registration" method="post">
+                        <h1>Welcome to <b>scatch</b></h1>
+                        <h2>create your account</h2>
+                        <div class="inputs">
+                            <input class="input name" type="text " name="fullname" placeholder="fullname">
+                            <input class="input" type="email" name="email" placeholder="email">
+                            <input class="input" type="password" name="password" placeholder="password">
+                        </div>
+                        <input type="submit" value="Create My Account" class="submit">
+                    </form>
+                </div>
+                <div class="box3">
+                    <form action="/users/login" method="post">
+                        <h2 class="h2">Login your account</h2>
+                        <div class="inputs">
+                            <input class="input" type="email" name="email" placeholder="email">
+                            <input class="input" type="password" name="password" placeholder="password">
+                        </div>
+                        <input type="submit" class="login" value="Login">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

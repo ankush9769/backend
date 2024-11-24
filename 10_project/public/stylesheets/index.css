@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    
+}
+.box1{
+    width: 100%;
+    height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box2{
+    width: 80%;
+    height: 50%;
+    background-color: red;
+    display: flex;
+}
+.box3{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+b{
+    color: rgb(60, 185, 234);
+}
+.input{
+    color:black;
+    outline: none;
+    border: 2px rgb(225, 220, 220) solid;
+    border-radius: 4px;
+    background-color: rgb(236, 235, 235);
+    width: 90%;
+    height: 5vh;
+    margin-top: 1vh ;
+}
+.inputs{
+    margin-top: 1vh;
+}
+.submit{
+    border: transparent;
+    font-size: 2vh;
+    display: inline;
+    width: 30%;
+    height: 5vh;
+    background-color: rgb(54, 114, 244);
+    color: white;
+    border-radius: 16px;
+    margin-top: 3vh;
+}
+.h2{
+    margin-top: 5vh;
+}
+.login{
+    border: transparent;
+    font-size: 2vh;
+    display: inline;
+    width: 20%;
+    height: 5vh;
+    background-color: rgb(54, 114, 244);
+    color: white;
+    border-radius: 16px;
+    margin-top: 3vh;
+}
+.errorbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+span{
+    color: red;
+    font-size: 18px;
+    font-weight: 700;
+}
+

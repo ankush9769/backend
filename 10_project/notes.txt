@@ -1,0 +1,28 @@
+before start the project there is something that we have to setup or take care
+1) install all neccessery packages
+2) create a new virtual environment file
+3) create .gitignore file that help you to ignore some files that you don't want to push to the repository
+4) initialize the git repository by git init command
+note : git will not track any empty folder so if you want to track the empty folder then create .gitkeep file in the empty folder
+
+
+
+
+
+
+
+//just becouse of the industry level 
+  we create create and connect our database in the separate folder named as config and all the models are created in differenct folder named as models and all the controllers are created in controllers folder and all the routes are created in routes folder
+
+
+
+//environment variable
+where it use = there are some routes that we are using duering development phase and we don't want to expose them to the production so we use environment variable to hide them  ...if the environment variable = development then only that perticular route will be active otherwise it will be inactive in case of production 
+#)how to create or set up the env variable
+1) install dotenv package
+    npm i dotenv
+2) then go to the .env file and create env variable 
+3) for using this env first require it in the you project file by using following line
+    require('dotenv').config();    
+  we use dotenv package to load the environment variable from .env file
+4) then use the env variable by its name 

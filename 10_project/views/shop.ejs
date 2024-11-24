@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h2>scatch</h2>
+        <div class="mainbox">
+            <div class="left">
+                <div class="top">
+                    <p>sort by</p>
+                    <select name="pupular" id="select">
+                        <option value="pupular">popular</option>
+                        <option value="newest">newest</option>
+                        <option value="average">average</option>
+                        <option value="good">good</option>
+                    </select>
+                </div>        
+                <div class="mid">
+                    <a href=""><p>New collection</p></a>
+                    <a href=""><p>all products</p></a>
+                    <a href=""><p>Discounts products</p></a>
+                </div>    
+                <div class="bottom">
+                    <ul>
+                        <li><p>filter by</p></li>
+                        <li><p>Availability</p></li>
+                        <li><p>Discount</p></li>
+                    </ul>
+                </div>  
+            </div>
+            <div class="right">
+                <% products.forEach(function(product){ %>
+                    <div class="box">
+                        <div class="img" >
+                            <img src="data:image/jpeg;base64,<%= product.image.toString('base64') %>" alt="">
+                        </div>
+                        <div class="bg-[<%= product.bgcolor %>] " id="productbox">
+                            <div class="boxleft">
+                                <p class="text-[<%=product.textcolor%>]"><%= product.name %></p>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i><%= product.price%></p>
+                            </div>
+                            <i class="fa-solid fa-plus" id="pluse"></i> 
+                        </div>                         
+                    </div>
+               <%})%>  
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

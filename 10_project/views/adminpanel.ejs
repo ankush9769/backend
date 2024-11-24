@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/adminpanel.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="parent">
+        <% if(success.length>0){ %>
+            <div class="successbox">
+                <span class="">
+                    <%= success %>!
+                </span>
+            </div>
+            <% } %>
+        <h3>scatch</h3>
+        <hr>
+        <div class="main">
+            <div class="left">
+                <a href="">All products</a>
+                <a href="">Create new product</a>
+            </div>
+            <div class="right">
+                <form action="/products/create" method="post" enctype="multipart/form-data">
+                    <h2>Create new product</h2>
+                    <h3>product details</h3>
+                    <p>product image</p>
+                    <input type="file" class="file" name="image"><br>
+                    <input class="first" type="text" name="name" placeholder="product Name">
+                    <input class="first" type="number" name="price" placeholder="product Price">
+                    <input class="first" type="number" name="discount" placeholder="Discount Price">
+
+                    <h3>panel details</h3>
+                    <input class="second" type="text" name="bgcolor" placeholder="Background colour">
+                    <input class="second" type="text" name="panelcolor" placeholder="Panel colour">
+                    <input class="second" type="text" name="textcolor" placeholder="Text colour"><br>
+
+                    <input type="submit" class="submit" value="create new product">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
